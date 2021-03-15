@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <script>
+  
+  var a = prompt("Enter a string to count number of B's in it", "");
+  var b = prompt("Enter a character to find out it count in string", "");
+ //Prints the count of B's
+  console.log(countBs(a));
+ //Prints the count of character given by user
+  console.log(countChar(a, b));
+ //function to return the count of B's
+  function countBs(a) {
+    var count = 0; 
+    for (var i = 0; i < a.length; i += 1) {
+      if (a.charAt(i) === "B")
+        count += 1;
+    }
+    return count;
+  }
+ //function to return the count of character given by user
+function countChar(a, ch){
+  var count=0;
+  for(var i=0; i<a.length; i+=1){
+    if(a.charAt(i)=== ch)
+        count+=1;
+  }
+  return count;
+}  
+ 
+  
+  </script>
+  </head>
+  </html>
